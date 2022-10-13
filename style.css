@@ -1,0 +1,140 @@
+.attribution { font-size: 11px; text-align: center; margin: 10px;}
+.attribution a { color: hsl(228, 45%, 44%); }
+/* ## Colors
+
+### Primary
+
+Bright orange: hsl(31, 77%, 52%)
+Dark cyan: hsl(184, 100%, 22%)
+Very dark cyan: hsl(179, 100%, 13%)
+
+### Neutral
+
+Transparent white (paragraphs): hsla(0, 0%, 100%, 0.75)
+Very light gray (background, headings, buttons): hsl(0, 0%, 95%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 15px
+
+### Font
+
+- Family: [Lexend Deca](https://fonts.google.com/specimen/Lexend+Deca)
+- Weights: 400
+
+- Family: [Big Shoulders Display](https://fonts.google.com/specimen/Big+Shoulders+Display)
+- Weights: 700 */
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    max-width: 100vw;
+    flex-direction: column;
+    font-size: 15px;
+    padding: 0 5%;
+}
+
+p{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend';
+}
+
+
+.container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.row1,.row2,.row3{
+    color: whitesmoke;
+    padding: 70px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    max-width: 200px;
+    min-height: 350px;
+    max-height: 400px;
+}
+h1{
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+    font-family: "Big Shoulders Display";
+}
+img{
+    max-width: 60px;
+    margin-bottom: 20px;
+}
+
+input{
+    padding: 15px;
+    border-radius: 3rem;
+    border: none;
+    width: 120px;
+    transition: 0.4s;
+}
+
+
+.row1{
+    background-color: hsl(31, 77%, 52%);
+}
+
+.row1 input{
+    color: hsl(31, 77%, 52%);
+    font-weight: 700;
+}
+
+.row2{
+    background-color: hsl(184, 100%, 22%);
+}
+
+.row2 input{
+    color: hsl(184, 100%, 22%);
+    font-weight: 700;
+}
+
+.row3{
+    background-color: hsl(179, 100%, 13%);
+}
+
+.row3 input{
+    color: hsl(179, 100%, 13%);
+    font-weight: 700;
+}
+
+input:hover{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid white;
+    color: white;
+
+}
+@media (max-width:900px){
+    .container{
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin: 5%;
+    }
+
+   .row1,.row2,.row3{
+       max-width: 100%;
+   }
+}
